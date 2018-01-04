@@ -1,0 +1,20 @@
+<h2>New Contact</h2>
+
+<form onsubmit={{action "saveContact"}}>
+  <p>
+    <label for="contact-first">First Name</label>
+    {{input value=model.first id="contact-first"}}
+  </p>
+
+  <p>
+    <label for="contact-last">Last Name</label>
+    {{input value=model.last id="contact-last"}}
+  </p>
+
+  <p>
+    <label for="contact-username">Username</label>
+    {{input value=model.username id="contact-username"}}
+  </p>
+
+  <button>Save</button>
+</form>

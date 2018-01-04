@@ -7,6 +7,9 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('contacts');
+  this.route('new-contact', { path: '/contacts/new' });
+  this.route('contact-detail', { path: '/contacts/:id' });
 });
 
 export default Router;

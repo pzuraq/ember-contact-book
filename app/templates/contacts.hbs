@@ -1,0 +1,13 @@
+<h2>Contacts</h2>
+
+<ul>
+  {{#each model as |contact|}}
+    <li>
+      {{contact.username}}
+
+      {{#link-to "contact-detail" contact.id}}See More{{/link-to}}
+    </li>
+  {{/each}}
+</ul>
+
+{{#link-to "new-contact"}}Add New Contact{{/link-to}}

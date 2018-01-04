@@ -1,0 +1,8 @@
+<h2>Details</h2>
+
+<p>Username: {{model.username}}</p>
+<p>First: {{model.first}}</p>
+<p>Last: {{model.last}}</p>
+
+{{#link-to "contacts"}}Back{{/link-to}}
+<button onclick={{action "deleteContact"}}>Delete Contact</button>
