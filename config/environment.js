@@ -7,6 +7,12 @@ module.exports = function(environment) {
     environment,
     rootURL: '/',
     locationType: 'auto',
+
+    DS: {
+      host: 'http://localhost:3000',
+    },
+
+
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -45,6 +51,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
+    ENV.DS.host = 'http://ember-contact-book-api.herokuapp.com';
     // here you can enable a production-specific feature
   }
 

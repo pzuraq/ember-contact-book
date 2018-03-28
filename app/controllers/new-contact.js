@@ -1,4 +1,5 @@
 import Controller from '@ember/controller';
+import config from 'contact-book/config/environment';
 
 export default Controller.extend({
   actions: {
@@ -6,7 +7,7 @@ export default Controller.extend({
       ev.preventDefault();
       const properties = this.model;
 
-      fetch('http://localhost:3000/people', {
+      fetch(`${config.DS.host}/people`, {
         credentials: 'include',
         method: 'POST',
         headers: {
